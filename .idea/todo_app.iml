@@ -110,6 +110,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="false" name="db:create: todo_app" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -160,6 +162,7 @@
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.7.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.12, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v2.1.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.3.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.9.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
@@ -168,6 +171,7 @@
     <orderEntry type="library" scope="PROVIDED" name="debugger (v1.6.8, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debugger-linecache (v1.2.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debugger-ruby_core_source (v1.3.8, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.5, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.2.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.3.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
@@ -193,6 +197,11 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.2.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-collection_matchers (v1.1.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.99.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.99.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.99.3, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.99.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.10, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.1, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
@@ -206,6 +215,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.7.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v2.0.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, RVM: ruby-1.9.3-p551-dev) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
