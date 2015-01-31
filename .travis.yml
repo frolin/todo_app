@@ -8,9 +8,6 @@ language: ruby
  before_script:
  - cp config/database.yml.travis config/database.yml
  - psql -c 'create database travis_todo_app_test;' -U postgres
-
-
-
 deploy:
   provider: heroku
   api_key:
