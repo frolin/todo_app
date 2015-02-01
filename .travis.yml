@@ -4,10 +4,7 @@ rvm:
 cache:
 - apt
 - bundler
-addons:
-  postgresql: "9.3"
-env:
--DB=postgresql
+env: -DB=postgresql
 script:
 - RAILS_ENV=test bundle exec rake db:migrate --trace
 - bundle exec rake
@@ -21,5 +18,3 @@ deploy:
   app: nameless-spire-6830
   on:
     repo: frolin/todo_app
-
-
