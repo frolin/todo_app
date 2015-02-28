@@ -1,2 +1,10 @@
-<h1>Tasks#index</h1>
+<h1><%= @todo_list.title %></h1>
 <p>Find me in app/views/tasks/index.html.erb</p>
+
+
+<div class="list-group">
+    <% @todo_list.tasks.each do |task| %>
+    <span class="list-group-item"> <%= task.content %> </span>
+    <% end %>
+
+</div>
