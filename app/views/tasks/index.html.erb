@@ -2,9 +2,10 @@
 <p>Find me in app/views/tasks/index.html.erb</p>
 
 
+<%= link_to 'Add', new_todo_list_task_path  %>
+
 <div class="list-group">
     <% @todo_list.tasks.each do |task| %>
     <span class="list-group-item"> <%= task.content %> </span>
     <% end %>
-
 </div>
