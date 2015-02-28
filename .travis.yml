@@ -4,7 +4,8 @@ rvm:
 cache:
  - apt
  - bundler
-env: -DB=postgresql
+env:
+ - DB=postgresql
 script:
  - RAILS_ENV=test bundle exec rake --trace db:migrate test
 before_script:
