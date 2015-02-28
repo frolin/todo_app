@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d55dc25-f253-4b51-9376-9433876d9f1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/features/tasks/create_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tasks/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/todo_app.iml" afterPath="$PROJECT_DIR$/.idea/todo_app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="todo_app.iws" />
@@ -1124,12 +1116,6 @@
       <option name="number" value="Default" />
       <updated>1422567250400</updated>
     </task>
-    <task id="LOCAL-00003" summary="no database.yml">
-      <created>1422568944909</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1422568944909</updated>
-    </task>
     <task id="LOCAL-00004" summary="add pg database&#10;add heroku &amp; travis">
       <created>1422739659771</created>
       <option name="number" value="00004" />
@@ -1418,7 +1404,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425147427711</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add create task spec">
+      <created>1425150677964</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1425150677965</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1486,7 +1478,8 @@
     <MESSAGE value="Add tasks controller and spec&#10;" />
     <MESSAGE value="Add tasks controller and spec&#10;fix tests" />
     <MESSAGE value="Add task index test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add task index test" />
+    <MESSAGE value="Add create task spec" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add create task spec" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
