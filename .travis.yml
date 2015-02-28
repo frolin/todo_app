@@ -7,7 +7,7 @@ cache:
 env: -DB=postgresql
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake rspec
+  - bundle exec rake
 before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database travis_todo_app_test;' -U postgres
