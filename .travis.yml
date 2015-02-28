@@ -1,16 +1,16 @@
 language: ruby
 rvm:
- - "2.1.0"
+  - "2.1.0"
 cache:
- - apt
- - bundler
+  - apt
+  - bundler
 env: -DB=postgresql
 script:
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake rspec
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake rspec
 before_script:
- - cp config/database.yml.travis config/database.yml
- - psql -c 'create database travis_todo_app_test;' -U postgres
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database travis_todo_app_test;' -U postgres
 deploy:
   provider: heroku
   api_key:
