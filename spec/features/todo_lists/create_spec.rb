@@ -3,17 +3,23 @@ require 'spec_helper'
 #
 describe 'Creating Todo list' do
 
-  it 'Creates todo list' do
+  def create_todo_list(options={})
+    options[:title] ||= "My test todo list"
+    options[:description] ||= "My test todo list discription"
 
-  visit '/todo_lists'
-  click_link 'New Todo list'
-  expect(page).to have_content 'New Todo List'
+    visit '/todo_lists'
+    click_link 'New Todo list'
+    expect(page).to have_content 'New Todo List'
 
-    fill_in "Title", with: "My test todo list"
-    fill_in "Description", with: "My test todo list discription"
+    fill_in "Title", with: options[:title]
+    fill_in "Description", with: options[:description]
 
     click_button "Create Todo list"
+  end
 
+
+  it 'Creates todo list' do
+    create_todo_list
     expect(page).to have_content "My test todo list"
   end
 
@@ -21,14 +27,7 @@ describe 'Creating Todo list' do
 
     expect(TodoList.count).to eq(0)
 
-    visit '/todo_lists'
-    click_link 'New Todo list'
-    expect(page).to have_content 'New Todo List'
-
-    fill_in "Title", with: ""
-    fill_in "Description", with: "My test todo list discription"
-
-    click_button "Create Todo list"
+    create_todo_list title: ""
 
     expect(page).to have_content "error"
 
