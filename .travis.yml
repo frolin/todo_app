@@ -1,13 +1,19 @@
 language: ruby
 rvm:
-- "2.1.0"
+ - "2.1.0"
 cache:
-- apt
-- bundler
+ - apt
+ - bundler
 env: -DB=postgresql
-before_script:
-- cp config/database.yml.travis config/database.yml
-- psql -c 'create database todo_app_test;' -U postgres
 script:
-- RAILS_ENV=test bundle exec rake db:migrate --trace
-- bundle exec rake
+ - RAILS_ENV=test bundle exec rake --trace db:migrate test
+before_script:
+ - cp config/database.yml.travis config/database.yml
+ - psql -c 'create database travis_todo_app_test;' -U postgres
+deploy:
+  provider: heroku
+  api_key:
+    secure: P4lFDAnF5e1Sm3xbs0OKC5mpc8fH6j8XXCGh4NWbd/jNL1Pls5pStn6k/TM5uvQcz1NDo9gmf/J2m2f2vm0BPNR+24zS2KwfRbwtlaMjzPQSDt8ebhgSCtgVXvUlgY1X00Gg5tNVRSzvIfYpwyCIVPrWNxwnxsG4f/iLGEj0k5A=
+  app: nameless-spire-6830
+  on:
+    repo: frolin/todo_app
