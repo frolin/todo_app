@@ -1,4 +1,4 @@
  test:
  adapter: postgresql
- database: travis_todo_app_test
+ database: todo_app_test
  username: postgres
