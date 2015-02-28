@@ -3,8 +3,12 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Todo Lists</h1>
-<div class="col-lg-12">
-<table>
+
+
+  <%= link_to "New Todo list", new_todo_list_path %>
+
+  <div class="col-lg-8">
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -29,7 +33,6 @@
 
 <br>
 
-<%= link_to 'New Todo list', new_todo_list_path %>
 
 </div>
 </div>
