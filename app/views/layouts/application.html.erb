@@ -6,12 +6,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= controller_name %>">
 
 
-<div class="container-fixed">
+<div class="container-fluid">
 
-  <%= flash_messages %>
+  <% flash.each do |type, message| %>
+      <div class="alert <%= bootstrap_class_for(type) %> fade in">
+        <button class="close" data-dismiss="alert">×</button>
+        <%= message %>
+      </div>
+  <% end %>
 
     <%= yield %>
 </div>
