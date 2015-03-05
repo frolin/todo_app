@@ -18,3 +18,4 @@ deploy:
   app: nameless-spire-6830
   on:
     repo: frolin/todo_app
+  run: "rake db:migrate"
