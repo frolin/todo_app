@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   get 'tasks/index'
 
   resources :todo_lists do
-      resources :tasks
+      resources :tasks do
+        member do
+          patch :complete
+        end
+      end
   end
 
   root 'todo_lists#index'

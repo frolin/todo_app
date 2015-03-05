@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+TodoList.destroy_all
+
+
+first_list = TodoList.create(title: "My Monday todo",
+               description: 'What i must do in first day of the week')
+first_list.tasks.create(content: "Wake UP")
+first_list.tasks.create(content: "Brush teeth")
+first_list.tasks.create(content: "SMART Toilet water choice")
+

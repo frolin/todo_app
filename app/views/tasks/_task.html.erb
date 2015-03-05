@@ -1,0 +1,17 @@
+<div class="list-group">
+
+    <div class="list-group-item" id="task-id-<%= task.id %>">
+      <% if task.complete?  %>
+          <i><%= link_to 'done', complete_todo_list_task_path(@todo_list, task.id), method: :patch %></i>
+          <strike><%= task.content %></strike>
+          <i style="color:forestgreen;"><%= task.created_at.strftime("%H %M %A") %></i>
+          <i style="color:red;"><%= task.completed_at.strftime("%H %M %A") %></i>
+      <% else %>
+          <i><%= link_to 'mark done', complete_todo_list_task_path(@todo_list, task.id), method: :patch %></i>
+          <%= task.content %>
+          <i style="color:forestgreen;"><%= task.created_at.strftime("%H %M %A") %></i>
+      <% end %>
+    <i><%= link_to 'x', todo_list_task_path(@todo_list, task.id), method: :delete, remote: true %></i>
+    </div>
+
+</div>

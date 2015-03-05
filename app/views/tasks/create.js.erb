@@ -1,0 +1,10 @@
+<% if @task.errors.count == 0 %>
+
+    $('.list-group-item:last').after('<%= j render "task", task: @task %>');
+    $('form')[0].reset();
+<% else %>
+
+    $('.new_product').remove();
+    $('#new_product_link').after('<%= j render("form") %>');
+
+<% end %>

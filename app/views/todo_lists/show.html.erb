@@ -1,14 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h2>
   <%= @todo_list.title %>
-</p>
+</h2>
+
+<h4>
+  <%= @todo_list.description %>
+</h4>
 
 <p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
+  <%= render @todo_list.tasks.order(:created_at) %>
 </p>
+
+<div id="form">
+  <%= render 'tasks/form' %>
+</div>
 
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
 <%= link_to 'Back', todo_lists_path %>
