@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3', :patchlevel => '551'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -9,6 +10,7 @@ gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
+gem 'simple_form'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
