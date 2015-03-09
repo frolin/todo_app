@@ -10,18 +10,14 @@
     <div class="container" ng-controller="MainCtrl" class="container">
 
       <ul ng-repeat="task in tasks" >
-        <li class="ui-state-default">
-          <input type="checkbox" ng-model="taskStatus" ng-value="task"> {{task.title}} <b>status:</b>{{task.status}}</input>
-
+        <li  class="ui-state-default">
+          <input type="checkbox" ng-click="checkTask(task)" ng-model="task.status" ng-value="task.status" >  {{task.title}} <b>status:</b>{{task.date | date:'medium'}}</input>
         </li>
       </ul>
 
       <form ng-submit="addTask()">
-        <input type="text" ng-model="title"></input>
-      <button type="submit"> Add new task </button>
+        <input type="text" ng-model="title"> </input> <button type="submit"> Add new task </button>
       </form>
-
-
 
     </div>
 
