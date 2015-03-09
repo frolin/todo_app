@@ -11,6 +11,12 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'simple_form'
+
+#AngularJS
+gem 'angularjs-rails'
+gem 'angular-rails-templates'
+gem 'bower-rails'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

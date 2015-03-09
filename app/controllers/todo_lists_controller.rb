@@ -5,6 +5,7 @@ class TodoListsController < ApplicationController
   # GET /todo_lists.json
   def index
     @todo_lists = TodoList.all
+    # render json: @todo_lists
   end
 
   # GET /todo_lists/1

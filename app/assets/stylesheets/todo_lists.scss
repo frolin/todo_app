@@ -1,3 +1,20 @@
 // Place all the styles related to the todo_lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+li.ui-state-default{
+  background:#fff;
+  border:none;
+  border-bottom:1px solid #ddd;
+}
+
+
+li.ui-state-done{
+  background:green;
+  border:none;
+  border-bottom:1px solid #ddd;
+  text-decoration:line-through;
+}
